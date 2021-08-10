@@ -191,7 +191,25 @@ form a{
     }
 }
 
-@media (max-width:400px){
+@media (max-width:420px){
     .form-ipsit input {width: 210px;}
     .blob-margin-ipsit{margin: 3rem 2rem;}
+}
+
+@media (max-width:380px){
+    .blob{
+        clip-path: ellipse(100% 40% at 0% 0%);
+    }
+
+    @keyframes animate-ipsit-1 {
+        0%   {clip-path: ellipse(100% 44% at 0% 0%);}
+        50% {clip-path: ellipse(100% 100%);}
+        100%   {clip-path: ellipse(100% 44% at 0% 0%);}
+    }
+
+    @keyframes animate-ipsit-2 {
+        0%   {clip-path: ellipse(100% 44% at 0% 0%);}
+        50% {clip-path: ellipse(100% 100%);}
+        100%   {clip-path: ellipse(100% 44% at 0% 0%);}
+    }
 }
